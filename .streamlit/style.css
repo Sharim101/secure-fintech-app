@@ -1,0 +1,90 @@
+/* General body styling for Batman theme */
+body {
+    background-image: url('https://i.imgur.com/kS5x87J.png'); /* Subtle Gotham skyline */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #E0E0E0; /* Light text for dark background */
+    font-family: "Lucida Console", Monaco, monospace; /* More techy/gritty font */
+}
+
+/* Streamlit main content area */
+.stApp {
+    background: rgba(10, 10, 10, 0.9); /* Semi-transparent dark overlay for content */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Sidebar styling */
+.st-emotion-cache-1pxazr7 { /* Target the sidebar container */
+    background-color: rgba(28, 28, 28, 0.95); /* Darker, slightly opaque sidebar */
+    border-right: 2px solid #FFC72C; /* Gold accent border */
+}
+
+/* Header/Title styling */
+h1 {
+    color: #FFC72C; /* Gold for main titles */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+h2, h3, h4, h5, h6 {
+    color: #FFC72C; /* Gold for subheadings */
+}
+
+/* Buttons */
+.stButton>button {
+    background-color: #FFC72C; /* Gold buttons */
+    color: #0A0A0A; /* Dark text on gold buttons */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #E0B000; /* Darker gold on hover */
+    color: #000000;
+}
+
+/* Text inputs, text areas, number inputs */
+.stTextInput>div>div>input,
+.stTextArea>div>div>textarea,
+.stNumberInput>div>div>input {
+    background-color: #333333; /* Darker input fields */
+    color: #E0E0E0;
+    border: 1px solid #FFC72C; /* Gold border for inputs */
+    border-radius: 5px;
+}
+
+/* Selectbox/Radio buttons */
+.st-emotion-cache-1vbaimi { /* Specific to radio button labels */
+    color: #FFC72C; /* Gold for radio button labels */
+}
+
+/* Expander (for secure notes) */
+.st-emotion-cache-1m748y4 { /* Expander header */
+    background-color: #333333;
+    border-left: 3px solid #FFC72C; /* Gold line on expander */
+    color: #E0E0E0;
+}
+
+/* Info boxes */
+.stAlert {
+    background-color: #333333; /* Darker info boxes */
+    color: #E0E0E0;
+    border-left: 5px solid #FFC72C; /* Gold border on info box */
+}
+
+/* Dataframe (for transactions) */
+.dataframe {
+    background-color: #1C1C1C;
+    color: #E0E0E0;
+}
+
+/* Ensure images don't stretch */
+img {
+    max-width: 100%;
+    height: auto;
+}
