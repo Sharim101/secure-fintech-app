@@ -1,13 +1,15 @@
 /* General body styling for Batman theme */
 body {
-    background-image: url('https://i.imgur.com/kS5x87J.png'); /* Subtle Gotham skyline */
+    /* New, stable URL for a dark city */
+    background-image: url('https://images.unsplash.com/photo-1512431707148-52b61403b9b4?auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    color: #E0E0E0; /* Light text for dark background */
-    font-family: "Lucida Console", Monaco, monospace; /* More techy/gritty font */
+    color: #E0E0E0;
+    font-family: "Lucida Console", Monaco, monospace;
 }
+
 
 /* Streamlit main content area */
 .stApp {
