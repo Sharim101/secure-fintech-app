@@ -113,6 +113,19 @@ init_db()
 
 # --- Streamlit App ---
 st.set_page_config(page_title="Secure FinTech App", layout="wide")
+
+# --- BATMAN THEME: Load custom CSS ---
+# This function reads the style.css file and injects it into the app
+def load_css(file_name):
+    try:
+        with open(file_name) as f:
+            st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    except FileNotFoundError:
+        st.warning("style.css file not found. App will use default styling.")
+
+load_css("style.css")
+# --- END BATMAN THEME ---
+
 st.title("CY4053 - Secure FinTech App")
 
 # Initialize session state
@@ -203,6 +216,10 @@ if not st.session_state.logged_in:
 
 # 2. IF LOGGED IN (Show Main App)
 else:
+    # --- BATMAN THEME: Add logo to sidebar ---
+    st.sidebar.image("https://i.imgur.com/2s4R5B2.png", width=100)
+    # --- END BATMAN THEME ---
+
     st.sidebar.title(f"Welcome, {st.session_state.username}")
     if st.sidebar.button("Logout"):
         # Test 6: Logout functionality
