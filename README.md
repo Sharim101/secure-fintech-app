@@ -1,6 +1,7 @@
 Name:Sharim
 Roll no: 22i-2259
 Section: FT-B
+
 This project is an assignment for **CY4053 - Cybersecurity for FinTech** (BSFT 7th Semester, Fall 2025).
 
 It is a mini-application built with Streamlit that demonstrates key secure development concepts. The app includes features for authentication, data validation, encrypted storage, and activity logging, and is designed to be manually tested for common vulnerabilities.
