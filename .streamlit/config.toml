@@ -1,0 +1,6 @@
+[theme]
+primaryColor="#FFC72C" # A deep yellow/gold, like Batman's utility belt
+backgroundColor="#0A0A0A" # Very dark, almost black
+secondaryBackgroundColor="#1C1C1C" # Slightly lighter dark gray
+textColor="#E0E0E0" # Light gray for text
+font="sans serif"
